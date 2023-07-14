@@ -2,6 +2,7 @@ import { Header } from '../../components/Header'
 import { Body } from '../../components/Body'
 import { Teste } from '../../components/Teste'
 import background from "../../assets/background.png"
+import foto from "../../assets/foto.jpg"
 import './styles.css'
 
 function App() {
@@ -15,7 +16,17 @@ function App() {
               <input name="usuario" placeholder='@username'></input>
               <button>Buscar</button>
             </div>
-          
+            <div className="perfil">
+              <img 
+                src={foto} 
+                className="profile"
+              ></img>
+            </div>
+            <div>
+              <h3>Caio Cavalcanti</h3>
+              <p>Descrição</p>
+            </div>
+            <hr></hr>
           </div>
         </div>
     </div>
